@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourOrderActivity">
+
+    <TextView
+        android:id="@+id/yourOrderHeader"
+        android:layout_width="273dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Orders"
+        android:textAlignment="center"
+        android:textColor="#F12011"
+        android:textSize="100px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/yourOrderList"
+        android:layout_width="410dp"
+        android:layout_height="287dp"
+        android:textSize="100px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderHeader" />
+
+    <TextView
+        android:id="@+id/yourOrderSubTotal"
+        android:layout_width="406dp"
+        android:layout_height="42dp"
+        android:text="Sub-Total"
+        android:textSize="75px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderList" />
+
+    <TextView
+        android:id="@+id/yourOrderTax"
+        android:layout_width="406dp"
+        android:layout_height="42dp"
+        android:text="Tax"
+        android:textSize="75px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderSubTotal" />
+
+    <TextView
+        android:id="@+id/yourOrderTotal"
+        android:layout_width="406dp"
+        android:layout_height="42dp"
+        android:text="Total"
+        android:textSize="75px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderTax" />
+
+    <Button
+        android:id="@+id/yourOrderPlaceOrder"
+        android:layout_width="341dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text="Place the Order"
+        android:textAlignment="center"
+        android:textSize="75px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/YourOrders"
+        android:layout_width="159dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderCoffee"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/StoreOrders"
+        android:layout_width="142dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/YourOrders"
+        app:layout_constraintTop_toBottomOf="@+id/OrderCoffee"
+        app:srcCompat="@drawable/order" />
+
+    <ImageView
+        android:id="@+id/OrderDonut"
+        android:layout_width="304dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/donut2" />
+
+    <ImageView
+        android:id="@+id/OrderCoffee"
+        android:layout_width="308dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDonut"
+        app:srcCompat="@drawable/coffee" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

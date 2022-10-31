@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RU Cafe Android</string>
+
+    <string-array name="donut_names">
+        <item>Yeast - Sugar Raised</item>
+        <item>Yeast - Jelly</item>
+        <item>Yeast - Pumpkin Spiced</item>
+        <item>Yeast - Glazed</item>
+        <item>Cake - Chocolate Frosted</item>
+        <item>Cake - Vanilla Frosted</item>
+        <item>Cake - Strawberry Frosted</item>
+        <item>Cake - Red Velvet</item>
+        <item>Donut Holes - Powdered</item>
+        <item>Donut Holes - Lemon</item>
+        <item>Donut Holes - Cinnamon</item>
+        <item>Donut Holes - Blueberry</item>
+    </string-array>
+
+    <string-array name="donut_prices">
+        <item>$1.59</item>
+        <item>$1.59</item>
+        <item>$1.59</item>
+        <item>$1.59</item>
+        <item>$1.79</item>
+        <item>$1.79</item>
+        <item>$1.79</item>
+        <item>$1.79</item>
+        <item>$0.39</item>
+        <item>$0.39</item>
+        <item>$0.39</item>
+        <item>$0.39</item>
+    </string-array>
+
+    <string-array name="ordering_basket_error">
+        <item>No Menu Items are in the basket.</item>
+    </string-array>
+
+</resources>

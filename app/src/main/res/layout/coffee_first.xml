@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="addCoffeeOnClick"
+    tools:context=".CoffeeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee3" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="367dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow
+            android:layout_width="363dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/milkCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickMilk"
+                android:text="Milk"
+                android:textSize="50px" />
+
+            <CheckBox
+                android:id="@+id/creamCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCream"
+                android:text="Cream"
+                android:textSize="50px" />
+
+            <CheckBox
+                android:id="@+id/syrupCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSyrup"
+                android:text="Syrup"
+                android:textSize="50px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/caramelCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCaramel"
+                android:text="Caramel"
+                android:textSize="50px" />
+
+            <CheckBox
+                android:id="@+id/whippedCreamCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickWhippedCream"
+                android:text="Whipped Cream"
+                android:textSize="50px" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/addCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:text="Add to Order"
+        android:textSize="75px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeSubTotal" />
+
+    <TextView
+        android:id="@+id/coffeeSubTotal"
+        android:layout_width="141dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Sub-Total"
+        android:textAlignment="center"
+        android:textSize="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeSize" />
+
+    <Spinner
+        android:id="@+id/coffeeSize"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
